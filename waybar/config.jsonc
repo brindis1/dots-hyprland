@@ -1,0 +1,108 @@
+{
+    "layer": "top",
+    "position": "top",
+    "fixed-center": true,
+
+    "modules-left": [],
+    "modules-center": [
+        "clock",
+        "custom/spotify-prev",
+        "custom/spotify-play",
+        "custom/spotify-next",
+        "hyprland/workspaces",
+        "network",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "battery"
+    ],
+    "modules-right": [],
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "tooltip": false
+    },
+
+    "custom/spotify-prev": {
+        "exec-if": "~/.config/waybar/scripts/spotify-visible.sh",
+        "exec": "echo '󰒮'",
+        "interval": 1,
+        "tooltip": false,
+        "on-click": "playerctl -p spotify previous"
+    },
+
+    "custom/spotify-play": {
+        "exec-if": "~/.config/waybar/scripts/spotify-visible.sh",
+        "exec": "playerctl -p spotify status | grep -q Playing && echo '⏸' || echo '▶'",
+        "interval": 1,
+        "tooltip": false,
+        "on-click": "playerctl -p spotify play-pause"
+    },
+
+    "custom/spotify-next": {
+        "exec-if": "~/.config/waybar/scripts/spotify-visible.sh",
+        "exec": "echo '󰒭'",
+        "interval": 1,
+        "tooltip": false,
+        "on-click": "playerctl -p spotify next"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{name}",
+        "all-outputs": false,
+        "active-only": false
+    },
+
+    "network": {
+        "format-wifi": "󰤨",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰤭",
+        "tooltip": true,
+        "on-click": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format": "{icon}",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ]
+        },
+        "tooltip": true,
+        "tooltip-format": "{volume}%",
+        "on-click": "pavucontrol"
+    },
+
+    "battery": {
+        "format": "{icon}",
+        "format-charging": "󰂄",
+        "format-icons": [
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
+        "tooltip": false
+    },
+
+    "cpu": {
+    "format": "󰍛",
+    "tooltip": true,
+    "tooltip-format": "CPU: {usage}%"
+    },
+
+    "memory": {
+        "format": "󰘚",
+        "tooltip": true,
+        "tooltip-format": "RAM: {}%"
+    }
+}
