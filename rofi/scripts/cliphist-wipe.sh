@@ -1,10 +1,10 @@
 #!/bin/bash
 
 choice=$(
-printf "󰆴 No\n󰆳 Sí, borrar todo" | rofi \
+printf "󰆴 No\n󰆳 Yes" | rofi \
     -dmenu \
     -i \
-    -p "Limpiar historial" \
+    -p "Clean cliphist" \
     -theme ~/.config/rofi/theme.rasi \
     -theme-str '
         window {
@@ -18,8 +18,6 @@ printf "󰆴 No\n󰆳 Sí, borrar todo" | rofi \
     '
 )
 
-[[ "$choice" != "󰆳 Sí, borrar todo" ]] && exit
+[[ "$choice" != "󰆳 Yes" ]] && exit
 
 cliphist wipe
-
-notify-send "Clipboard" "Historial eliminado"
