@@ -3,4 +3,5 @@
 rofimoji \
     --selector rofi \
     --clipboarder wl-copy \
-    --action copy
+    --action copy \
+    --max-recent 0
