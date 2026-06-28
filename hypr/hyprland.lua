@@ -119,8 +119,8 @@ hl.config({
 		rounding_power = 2,
 
 		-- Change transparency of focused and unfocused windows
-		active_opacity = 1.0,
-		inactive_opacity = 0.98,
+		active_opacity = 0.975,
+		inactive_opacity = 0.925,
 
 		shadow = {
 			enabled = true,
@@ -309,7 +309,7 @@ hl.bind(mainMod .. " + D", hl.dsp.workspace.toggle_special("magic"))
 hl.bind(mainMod .. " + SHIFT + D", hl.dsp.window.move({ workspace = "special:magic" }))
 -- Special workspace 2
 hl.bind(mainMod .. " + F", hl.dsp.workspace.toggle_special("johnson"))
-hl.bind(mainMod .. " + SHIFT + D", hl.dsp.window.move({ workspace = "special:johnson" }))
+hl.bind(mainMod .. " + SHIFT + F", hl.dsp.window.move({ workspace = "special:johnson" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
