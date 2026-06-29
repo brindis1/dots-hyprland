@@ -1,9 +1,13 @@
 configuration {
     show-icons: true;
 
+    hover-select: true;
+    me-select-entry: "";
+    me-accept-entry: "MousePrimary";
+
     display-ssh:    "󰣀 ssh:";
     display-run:    "󱓞 run:";
-    display-drun:   "󰣖 drun:";
+    display-drun:   "󰣖  launch:";
     display-window: "󱂬 window:";
     display-combi:  "󰕘 combi:";
     display-filebrowser: "󰉋 filebrowser:";

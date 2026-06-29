@@ -1,7 +1,7 @@
 #!/bin/bash
 
 choice=$(
-printf "󰆴 No\n󰆳 Yes" | rofi \
+printf "󰆳 Yes\n󰆴 No" | rofi \
     -dmenu \
     -i \
     -p "Clean cliphist" \
@@ -21,3 +21,5 @@ printf "󰆴 No\n󰆳 Yes" | rofi \
 [[ "$choice" != "󰆳 Yes" ]] && exit
 
 cliphist wipe
+
+notify-send "Clipboard" "Historial eliminado"
