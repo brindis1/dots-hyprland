@@ -20,7 +20,8 @@
 
     "clock": {
         "format": "{:%H:%M}",
-        "tooltip": false
+        "tooltip": false,
+        "on-click": "dcal show --view day"
     },
 
     "custom/spotify-prev": {
