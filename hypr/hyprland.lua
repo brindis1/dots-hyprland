@@ -42,7 +42,7 @@ local wallpaper = os.getenv("HOME") .. "/.config/rofi/scripts/wallpaper.sh"
 local screenshot = [[
 grim -g "$(slurp)" - | swappy -f -
 ]]
-local hyprlock = "hyprlock"
+local wlogout = "wlogout"
 ------------------ -
 ---- AUTOSTART ----
 -------------------
@@ -277,8 +277,8 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(bar))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
--- hyprlock
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(hyprlock))
+-- wlogout
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(wlogout))
 -- wallpaper script rofi
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd(wallpaper))
 -- screenshot
@@ -288,7 +288,6 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("bash ~/.config/rofi/scripts/cliphist
 hl.bind(mainMod .. " + ALT + V", hl.dsp.exec_cmd("bash ~/.config/rofi/scripts/cliphist-wipe.sh"))
 hl.bind(mainMod .. " + PERIOD", hl.dsp.exec_cmd("bash ~/.config/rofi/scripts/emojis.sh"))
 
--- hl.bind(MainMOd .. " + SHIFT + V", hl.dsp.exec_cmd("cliphist wipe"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
@@ -424,14 +423,17 @@ hl.window_rule({
 })
 
 hl.window_rule({
-	name = "transparent",
+	name = "dcal-float",
 
 	match = {
-		class = "helium-browser",
+		class = "com.danklinux.dankcalendar",
 	},
 
-	opacity = 0.95,
+	float = true,
+	move = {725,40},
+	size = {500,500}
 })
+
 
 -- hl.window_rule({
 --    name = "kitty",
@@ -444,3 +446,68 @@ hl.window_rule({
 --    center = true,
 --    size = "700 500",
 -- })
+
+---------------------------------
+---- WORKSPACE LAYOUT TOGGLE ----
+---------------------------------
+-- made by @jemabaris on discord, ty
+
+
+local function update_border_colors(layout)
+  if layout == "scrolling" then
+    hl.config({
+      general = {
+        border_size = 1,
+        col = {
+          active_border = {
+            colors = { "rgba(cfdbd5ff)", "rgba(e8eddfaa)" },
+            angle = 45,
+          },
+          inactive_border = "rgba(595959aa)",
+        },
+      },
+    })
+  else
+    hl.config({
+      general = {
+        border_size = 1,
+        col = {
+          active_border = {
+            colors = { "rgba(cfdbd5ff)", "rgba(e8eddfaa)" },
+            angle = 45,
+          },
+          inactive_border = "rgba(595959aa)",
+        },
+      },
+    })
+  end
+end
+
+hl.on("workspace.active", function(ws)
+  if ws then
+    update_border_colors(ws.tiled_layout)
+  end
+end)
+
+local mainMod = "SUPER"
+hl.bind(mainMod .. " + SHIFT + T", function()
+  local ws = hl.get_active_workspace()
+  if not ws then
+    return
+  end
+
+  local new_layout = ws.tiled_layout == "dwindle" and "scrolling" or "dwindle"
+
+  hl.workspace_rule({
+    workspace = tostring(ws.id),
+    layout = new_layout,
+  })
+
+  update_border_colors(new_layout)
+
+  hl.notification.create({
+    text = "󱂬    Workspace layout set to " .. new_layout,
+    duration = 3000,
+    icon = 5,
+  })
+end)
