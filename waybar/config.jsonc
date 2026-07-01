@@ -21,7 +21,7 @@
     "clock": {
         "format": "{:%H:%M}",
         "tooltip": false,
-        "on-click": "dcal show --view day"
+        "on-click": "rofi -show drun"
     },
 
     "custom/spotify-prev": {
