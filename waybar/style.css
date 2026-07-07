@@ -11,7 +11,7 @@ window#waybar {
 }
 
 .modules-center {
-    background: #242423;
+    background: #000000;
 
     border-radius: 999px;
 
@@ -34,7 +34,7 @@ window#waybar {
 
 #clock {
     font-weight: bold;
-    color: #E8EDDF;
+    color: #ffffff;
 }
 
 #workspaces button {
@@ -42,20 +42,20 @@ window#waybar {
     margin: 0 2px;
 
     font-weight: bold;
-    color: #CFDBD5;
+    color: #ffffff;
     border-radius: 999px;
 
     background: transparent;
 }
 
 #workspaces button.active {
-    background: #CFDBD5;
+    background: #ffffff;
     color: #1e1e2e;
 }
 
 #workspaces button:hover {
-    background: #CFDBD5;
-    color: #1e1e2e;
+    background: #ffffff;
+    color: #000000;
 
 }
 
@@ -67,14 +67,15 @@ window#waybar {
     padding: 0 8px;
     margin: 0 2px;
 
-    color: #E8EDDF;
+    color: #ffffff;
 }
 
+#custom-song-title,
 #custom-spotify-prev,
 #custom-spotify-play,
 #custom-spotify-next{
     padding: 0 6px;
     margin: 0 2px;
-
-    color: #E8EDDF; 
+    font-weight: bold;
+    color: #ffffff; 
 }

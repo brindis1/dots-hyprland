@@ -12,11 +12,11 @@ GRID_THEME='
 * {
   font: "Inter Medium 13";
 
-  base: #242423;
-  surface0: #242423;
-  surface1: #333533;
-  text: #e8eddf;
-  accent: #e8eddf;
+  base: #000000;
+  surface0: #000000;
+  surface1: #242423;
+  text: #ffffff;
+  accent: #ffffff;
 }
 
 window {
@@ -65,7 +65,7 @@ listview {
 }
 
 element {
-  padding: 10px;
+  padding: 0px;
   spacing: 10px;
   border-radius: 14px;
   background-color: @surface0;

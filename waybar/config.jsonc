@@ -6,6 +6,7 @@
     "modules-left": [],
     "modules-center": [
         "clock",
+        "custom/song-title",
         "custom/spotify-prev",
         "custom/spotify-play",
         "custom/spotify-next",
@@ -22,6 +23,12 @@
         "format": "{:%H:%M}",
         "tooltip": false,
         "on-click": "rofi -show drun"
+    },
+    
+    "custom/song-title":{
+        "exec" :"~/.config/waybar/scripts/song-title.sh",
+        "exec-if": "playerctl -p spotify status >/dev/null 2>&1",
+        "interval": 1
     },
 
     "custom/spotify-prev": {
@@ -49,11 +56,14 @@
     },
 
     "hyprland/workspaces": {
-        "format": "{name}",
-        "all-outputs": false,
-        "active-only": false
+        "format": "{icon}",
+        "on-click": "activate"
+        /*"format-icons": {
+            "active": "󰮯",
+            "default": "󰊠",
+            "persistent": "󰊠"
+        }*/
     },
-
     "network": {
         "format-wifi": "󰤨",
         "format-ethernet": "󰈀",

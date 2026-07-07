@@ -1,11 +1,11 @@
 * {
     font: "Inter Medium 13";
 
-    base:      #242423;
-    surface0:  #242423;
-    surface1:  #333533;
-    text:      #e8eddf;
-    accent:    #e8eddf;
+    base:      #000000;
+    surface0:  #000000;
+    surface1:  #242423;
+    text:      #ffffff;
+    accent:    #ffffff;
 
     background-color: transparent;
 }
