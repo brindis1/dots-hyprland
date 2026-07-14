@@ -65,6 +65,8 @@ listview {
 }
 
 element {
+  orientation: vertical;
+  children: [ element-icon, element-text ];
   padding: 0px;
   spacing: 10px;
   border-radius: 14px;
@@ -77,13 +79,17 @@ element selected.normal {
 
 element-icon {
   size: 180px;
+  expand: true;
   horizontal-align: 0.5;
   vertical-align: 0.5;
 }
 
 element-text {
+  font: "Inter Medium 10";
   text-color: @text;
   horizontal-align: 0.5;
+  vertical-align: 0.5;
+  expand: false;
 }
 '
 
