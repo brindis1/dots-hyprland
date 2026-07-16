@@ -39,9 +39,7 @@ local menu = "rofi -show drun"
 local bar = "pkill waybar || waybar &"
 local browser = "helium-browser"
 local wallpaper = os.getenv("HOME") .. "/.config/rofi/scripts/wallpaper.sh"
-local screenshot = [[
-grim -g "$(slurp)" - | swappy -f -
-]]
+local screenshot = os.getenv("HOME") .. "/.config/scripts/screenshots.sh"
 local wlogout = "wlogout"
 ------------------ -
 ---- AUTOSTART ----
@@ -277,16 +275,23 @@ hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 hl.bind(mainMod .. " + J", hl.dsp.layout("togglesplit")) -- dwindle only
 hl.bind(mainMod .. " + W", hl.dsp.exec_cmd(bar))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+-- swaync
+hl.bind(mainMod .. " + L", hl.dsp.exec_cmd("swaync-client -t -sw"))
 -- wlogout
-hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(wlogout))
+-- hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(wlogout))
 -- wallpaper script rofi
 hl.bind(mainMod .. " + H", hl.dsp.exec_cmd(wallpaper))
 -- screenshot
 hl.bind(mainMod .. " + SHIFT + s", hl.dsp.exec_cmd(screenshot))
+hl.bind(mainMod .. " + S", hl.dsp.exec_cmd("bash ~/.config/scripts/save-screenshot.sh"))
 -- clipboard
 hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("bash ~/.config/rofi/scripts/cliphist.sh"))
 hl.bind(mainMod .. " + ALT + V", hl.dsp.exec_cmd("bash ~/.config/rofi/scripts/cliphist-wipe.sh"))
 hl.bind(mainMod .. " + PERIOD", hl.dsp.exec_cmd("bash ~/.config/rofi/scripts/emojis.sh"))
+hl.bind("ALT + SPACE", hl.dsp.exec_cmd("bash ./.config/rofi/scripts/terminal-launcher.sh"))
+
+-- hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd("/usr/bin/quickshell ipc --any-display -p /usr/share/tide-island call overview toggle"))
+-- hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("/usr/bin/quickshell ipc --any-display -p /usr/share/tide-island call tide toggleWallpaperPicker"))
 
 
 -- Move focus with mainMod + arrow keys
