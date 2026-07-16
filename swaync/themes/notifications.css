@@ -1,5 +1,5 @@
 @define-color text            #ffffff;
-@define-color background      #000000;
+@define-color background      #0d0d0d;
 @define-color background-alt  #111111;
 @define-color selected        #ffffff;
 @define-color hover           rgba(255,255,255,0.15);
@@ -21,7 +21,7 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-  background: rgba(0, 0, 0, 0.95);
+  background: #0d0d0d;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0);
   border: None;
   border-radius: 8px;

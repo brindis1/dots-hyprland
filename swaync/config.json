@@ -21,7 +21,7 @@
   "notification-inline-replies": true,
   "notification-visibility": {},
   "notification-window-width": 400,
-  "notification-window-height": 80,
+  "notification-window-height": 150,
   "positionX": "right",
   "positionY": "top",
   "script-fail-notify": true,
