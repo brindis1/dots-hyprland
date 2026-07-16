@@ -14,7 +14,7 @@ GRID_THEME='
 
   base: #000000;
   surface0: #000000;
-  surface1: #242423;
+  surface1: #0d0d0d;
   text: #ffffff;
   accent: #ffffff;
 }
