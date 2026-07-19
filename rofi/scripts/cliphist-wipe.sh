@@ -9,7 +9,7 @@ printf "󰆳 Yes\n󰆴 No" | rofi \
     -theme-str '
         window {
             width: 380px;
-            height: 200px;
+            height: 225px;
         }
 
         listview {

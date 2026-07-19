@@ -18,7 +18,9 @@ window {
 
     border: 2px;
     border-color: @surface1;
-    border-radius: 18px;
+    border-radius: 20px 20px 0px 0px;
+    padding: 18px;
+    location: south;
 }
 
 mainbox {
@@ -52,6 +54,8 @@ listview {
 
     border: 0;
     spacing: 6px;
+    
+    padding: 0px 0px;
 
     lines: 10;
     dynamic: false;

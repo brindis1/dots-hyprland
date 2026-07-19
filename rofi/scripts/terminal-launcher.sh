@@ -5,11 +5,17 @@ cmd=$(rofi -dmenu \
     -theme-str '
         
         window {
-            width: 450px;
+            width: 550px;
             height: 93px;
         }
+
+        entry {
+          placeholder: "Input...";
+
+        }
+        
     ' \
-    -p "Prompt")
+    -p "")
 
 [ -z "$cmd" ] && exit
 

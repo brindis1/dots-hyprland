@@ -25,8 +25,9 @@ window {
   background-color: @base;
   border: 2px;
   border-color: @surface1;
-  border-radius: 20px;
+  border-radius: 20px 20px 0px 0px;
   padding: 18px;
+  location: south;
 }
 
 mainbox {
