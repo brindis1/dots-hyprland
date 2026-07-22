@@ -36,7 +36,7 @@ hl.monitor({
 local terminal = "kitty"
 local fileManager = "dolphin"
 local menu = "rofi -show drun"
-local bar = "pkill waybar || waybar &"
+local bar = "pkill waybar || ~/.config/waybar/scripts/start.sh &"
 local browser = "helium-browser"
 local wallpaper = os.getenv("HOME") .. "/.config/rofi/scripts/wallpaper.sh"
 local screenshot = os.getenv("HOME") .. "/.config/scripts/screenshots.sh"
@@ -53,7 +53,7 @@ local wlogout = "wlogout"
 hl.on("hyprland.start", function()
 	--   hl.exec_cmd(terminal)
 	--   hl.exec_cmd("nm-applet")
-	hl.exec_cmd("waybar & awww-daemon")
+	hl.exec_cmd("~/.config/waybar/scripts/start.sh & awww-daemon")
 	hl.exec_cmd("wl-paste --type text --watch cliphist store &")
 	hl.exec_cmd("wl-paste --type image --watch cliphist store &")
 end)
@@ -289,10 +289,7 @@ hl.bind(mainMod .. " + V", hl.dsp.exec_cmd("bash ~/.config/rofi/scripts/cliphist
 hl.bind(mainMod .. " + ALT + V", hl.dsp.exec_cmd("bash ~/.config/rofi/scripts/cliphist-wipe.sh"))
 hl.bind(mainMod .. " + PERIOD", hl.dsp.exec_cmd("bash ~/.config/rofi/scripts/emojis.sh"))
 hl.bind("ALT + SPACE", hl.dsp.exec_cmd("bash ./.config/rofi/scripts/terminal-launcher.sh"))
-
--- hl.bind(mainMod .. " + TAB", hl.dsp.exec_cmd("/usr/bin/quickshell ipc --any-display -p /usr/share/tide-island call overview toggle"))
--- hl.bind(mainMod .. " + H", hl.dsp.exec_cmd("/usr/bin/quickshell ipc --any-display -p /usr/share/tide-island call tide toggleWallpaperPicker"))
-
+hl.bind(mainMod .. " + G", hl.dsp.exec_cmd("bash ~/.config/rofi/scripts/settings.sh"))
 
 -- Move focus with mainMod + arrow keys
 hl.bind(mainMod .. " + left", hl.dsp.focus({ direction = "left" }))
@@ -435,10 +432,9 @@ hl.window_rule({
 	},
 
 	float = true,
-	move = {725,40},
-	size = {500,500}
+	move = { 725, 40 },
+	size = { 500, 500 },
 })
-
 
 -- hl.window_rule({
 --    name = "kitty",
@@ -457,62 +453,61 @@ hl.window_rule({
 ---------------------------------
 -- made by @jemabaris on discord, ty
 
-
 local function update_border_colors(layout)
-  if layout == "scrolling" then
-    hl.config({
-      general = {
-        border_size = 1,
-        col = {
-          active_border = {
-            colors = { "rgba(cfdbd5ff)", "rgba(e8eddfaa)" },
-            angle = 45,
-          },
-          inactive_border = "rgba(595959aa)",
-        },
-      },
-    })
-  else
-    hl.config({
-      general = {
-        border_size = 1,
-        col = {
-          active_border = {
-            colors = { "rgba(cfdbd5ff)", "rgba(e8eddfaa)" },
-            angle = 45,
-          },
-          inactive_border = "rgba(595959aa)",
-        },
-      },
-    })
-  end
+	if layout == "scrolling" then
+		hl.config({
+			general = {
+				border_size = 1,
+				col = {
+					active_border = {
+						colors = { "rgba(cfdbd5ff)", "rgba(e8eddfaa)" },
+						angle = 45,
+					},
+					inactive_border = "rgba(595959aa)",
+				},
+			},
+		})
+	else
+		hl.config({
+			general = {
+				border_size = 1,
+				col = {
+					active_border = {
+						colors = { "rgba(cfdbd5ff)", "rgba(e8eddfaa)" },
+						angle = 45,
+					},
+					inactive_border = "rgba(595959aa)",
+				},
+			},
+		})
+	end
 end
 
 hl.on("workspace.active", function(ws)
-  if ws then
-    update_border_colors(ws.tiled_layout)
-  end
+	if ws then
+		update_border_colors(ws.tiled_layout)
+	end
 end)
 
 local mainMod = "SUPER"
 hl.bind(mainMod .. " + SHIFT + T", function()
-  local ws = hl.get_active_workspace()
-  if not ws then
-    return
-  end
+	local ws = hl.get_active_workspace()
+	if not ws then
+		return
+	end
 
-  local new_layout = ws.tiled_layout == "dwindle" and "scrolling" or "dwindle"
+	local new_layout = ws.tiled_layout == "dwindle" and "scrolling" or "dwindle"
 
-  hl.workspace_rule({
-    workspace = tostring(ws.id),
-    layout = new_layout,
-  })
+	hl.workspace_rule({
+		workspace = tostring(ws.id),
+		layout = new_layout,
+	})
 
-  update_border_colors(new_layout)
+	update_border_colors(new_layout)
 
-  hl.notification.create({
-    text = "󱂬    Workspace layout set to " .. new_layout,
-    duration = 3000,
-    icon = 5,
-  })
+	hl.notification.create({
+		text = "󱂬    Workspace layout set to " .. new_layout,
+		duration = 3000,
+		icon = 5,
+	})
 end)
