@@ -9,22 +9,18 @@ if ! pidof awww-daemon >/dev/null; then
 fi
 
 GRID_THEME='
+@import "../colors.rasi"
+
 * {
   font: "Inter Medium 13";
-
-  base: #000000;
-  surface0: #000000;
-  surface1: #0d0d0d;
-  text: #ffffff;
-  accent: #ffffff;
 }
 
 window {
   width: 800px;
   height: 350px;
-  background-color: @base;
+  background-color: @bg0;
   border: 2px;
-  border-color: @surface1;
+  border-color: @sec;
   border-radius: 20px 20px 0px 0px;
   padding: 18px;
   location: south;
@@ -36,9 +32,9 @@ mainbox {
 }
 
 inputbar {
-  background-color: @surface0;
+  background-color: @bg0;
   border: 1px;
-  border-color: @surface1;
+  border-color: @sec;
   border-radius: 14px;
   padding: 12px 16px;
   spacing: 10px;
@@ -46,7 +42,7 @@ inputbar {
 }
 
 prompt {
-  text-color: @accent;
+  text-color: @text;
 }
 
 entry {
@@ -71,11 +67,11 @@ element {
   padding: 0px;
   spacing: 10px;
   border-radius: 14px;
-  background-color: @surface0;
+  background-color: @bg0;
 }
 
 element selected.normal {
-  background-color: @surface1;
+  background-color: @sec;
 }
 
 element-icon {

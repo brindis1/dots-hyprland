@@ -1,5 +1,7 @@
 /* ---------------- Colors ---------------- */
 
+@import '../colors.css';
+/*
 @define-color text            #ffffff;
 @define-color background      #000000;
 @define-color background-sec  #0d0d0d;
@@ -8,7 +10,8 @@
 @define-color selected        #ffffff;
 @define-color hover           rgba(255,255,255,0.15);
 @define-color urgent          #ff5555;
-
+*/
+@define-color urgent          #ff5555;
 * {
   color: @text;
 
@@ -26,7 +29,7 @@
 /* CONTROL CENTER ------------------------------------------------------------------------ */
 
 .control-center {
-  background: rgb(0, 0, 0);
+  background: @bg0;
   border-radius: 24px;
   border:None;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0);
@@ -37,7 +40,7 @@
 /* Notifications */
 .control-center .notification-row .notification-background,
 .control-center .notification-row .notification-background .notification.critical {
-  background: @background-sec;
+  background: @sec;
   border: 1px solid rgb(255,255,255,0);
   border-radius: 16px;
   margin: 4px 0;
@@ -67,18 +70,18 @@
 
 .control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
   background: @selected;
-  color: @background;
+  color: @bg0;
 }
 
 .control-center .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
   background: @selected;
-  color: @background;
+  color: @bg0;
 }
 
 /* Buttons */
 
 .control-center .notification-row .notification-background .close-button {
-  background: @background-sec;
+  background: @sec;
   color: @text;
   border-radius: 6px;
   margin: 0;
@@ -87,8 +90,8 @@
 
 .control-center .notification-row .notification-background .close-button:hover,
 .control-center .notification-row .notification-background .close-button:active {
-  background: @selected;
-  color: @background;
+  background: @bg1;
+  color: @bg0;
 }
 
 progressbar,
@@ -129,8 +132,8 @@ progressbar {
 
 .notification-group-collapse-button:hover,
 .notification-group-close-all-button:hover {
-  background: @selected;
-  color: @background;
+  background: @bg1;
+  color: @bg0;
 }
 
 /* WIDGETS --------------------------------------------------------------------------- */
@@ -151,8 +154,8 @@ progressbar {
 
 .widget-title button:hover,
 .widget-title button:active {
-  background: @selected;
-  color: @background;
+  background: @bg1;
+  color: @bg0;
 }
 
 /* Do not disturb */
@@ -171,11 +174,11 @@ progressbar {
 }
 
 .widget-dnd > switch:hover {
-  background: @hover;
+  background: @sec;
 }
 
 .widget-dnd > switch:checked {
-  background: @selected;
+  background: @bg0;
 }
 
 .widget-dnd > switch:checked:hover {
@@ -183,7 +186,7 @@ progressbar {
 }
 
 .widget-dnd > switch slider {
-  background: @background;
+  background: @bg0;
   border-radius: 6px;
 }
 
@@ -194,7 +197,7 @@ progressbar {
   padding: 6px 2px;
   margin: 6px;
   border-radius: 12px;
-  background: @background-sec;
+  background: @sec;
   border: 1px solid rgba(255,255,255,.08);
 }
 
@@ -206,14 +209,14 @@ progressbar {
 }
 
 .widget-buttons-grid > flowbox > flowboxchild > button:hover {
-  background: @selected;
-  color: @background;
+  background: @sec;
+  color: @bg0;
 }
 
 /* Music player */
 
 .widget-mpris {
-  background: @background-sec;
+  background: @sec;
   border: 1px solid rgba(255,255,255,.08);
   border-radius: 16px;
   color: @text;
@@ -221,7 +224,7 @@ progressbar {
 }
 
 .widget-mpris-player {
-  background: @background;
+  background: @bg0;
   border-radius: 22px;
   padding: 6px 14px;
   margin: 6px;
@@ -233,7 +236,7 @@ progressbar {
 }
 
 .widget-mpris button {
-  color: rgba(255,255,255,.6);
+  color: @text;
 }
 
 .widget-mpris button:hover {

@@ -1,8 +1,12 @@
-@define-color text            #ffffff;
+@import '../colors.css'
+
+/*@define-color text            #ffffff;
 @define-color background      #0d0d0d;
 @define-color background-alt  #111111;
 @define-color selected        #ffffff;
 @define-color hover           rgba(255,255,255,0.15);
+@define-color urgent          #ff5555;
+*/
 @define-color urgent          #ff5555;
 
 * {
@@ -21,7 +25,7 @@
 }
 
 .floating-notifications.background .notification-row .notification-background {
-  background: #0d0d0d;
+  background: @sec;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0);
   border: None;
   border-radius: 8px;
@@ -47,7 +51,7 @@
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action {
-  background: @background-alt;
+  background: @bg0;
   color: @text;
   border: None;
   border-radius: 8px;
@@ -55,14 +59,14 @@
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:hover {
-  background: @selected;
-  color: @background;
+  background: @sec;
+  color: @bg0;
   border: None;
 }
 
 .floating-notifications.background .notification-row .notification-background .notification > *:last-child > * .notification-action:active {
-  background: @selected;
-  color: @background;
+  background: @sec;
+  color: @bg0;
 }
 
 .image {
@@ -88,13 +92,13 @@
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button:hover {
-  background: @selected;
-  color: @background;
+  background: @sec;
+  color: @bg0;
 }
 
 .floating-notifications.background .notification-row .notification-background .close-button:active {
-  background: @selected;
-  color: @background;
+  background: @sec;
+  color: @bg0;
 }
 
 .notification.critical progress {
@@ -103,5 +107,5 @@
 
 .notification.low progress,
 .notification.normal progress {
-  background: @selected;
+  background: @sec;
 }

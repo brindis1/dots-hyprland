@@ -9,6 +9,10 @@ cmd=$(rofi -dmenu \
             height: 93px;
         }
 
+        prompt {
+            enabled: false;
+        }
+
         entry {
           placeholder: "Input...";
 

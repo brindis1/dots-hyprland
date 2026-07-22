@@ -1,11 +1,7 @@
+@import "colors.rasi"
+
 * {
     font: "Inter Medium 13";
-
-    base:      #000000;
-    surface0:  #000000;
-    surface1:  #0d0d0d;
-    text:      #ffffff;
-    accent:    #ffffff;
 
     background-color: transparent;
 }
@@ -14,10 +10,10 @@ window {
     width: 420px;
     height: 350px;
 
-    background-color: @base;
+    background-color: @bg0;
 
     border: 2px;
-    border-color: @surface1;
+    border-color: @sec;
     border-radius: 20px 20px 0px 0px;
     padding: 18px;
     location: south;
@@ -30,10 +26,10 @@ mainbox {
 }
 
 inputbar {
-    background-color: @surface0;
+    background-color: @bg0;
 
     border: 1px;
-    border-color: @surface1;
+    border-color: @sec;
     border-radius: 12px;
 
     padding: 10px 14px;
@@ -41,7 +37,7 @@ inputbar {
 }
 
 prompt {
-    text-color: @accent;
+    text-color: @text;
 }
 
 entry {
@@ -72,7 +68,7 @@ element {
 }
 
 element selected.normal {
-    background-color: @surface1;
+    background-color: @sec;
 }
 
 element-text {

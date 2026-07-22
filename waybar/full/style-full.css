@@ -1,4 +1,4 @@
-@import "colors.css";
+@import "../colors.css";
 
 
 * {
@@ -20,8 +20,33 @@ window#waybar {
     margin-top: 5px;
 
     padding-left: 14px;
-    padding-right: 1px;
+    padding-right: 14px;
 }
+
+.modules-right {
+    background: @bg0;
+
+    border-radius: 999px;
+
+    margin-top: 5px;
+    margin-right: 4px;
+
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.modules-left {
+    background: @bg0;
+
+    border-radius: 999px;
+
+    margin-top: 5px;
+    margin-left: 4px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 
 #clock,
 #workspaces,
@@ -63,6 +88,16 @@ window#waybar {
 
 }
 
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#battery {
+    padding: 0 8px;
+    margin: 0 2px;
+
+    color: @text;
+}
 
 #custom-song-title,
 #custom-spotify-prev,

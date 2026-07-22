@@ -3,16 +3,23 @@
     "position": "top",
     "fixed-center": true,
 
-    "modules-left": [],
+    "modules-left": [
+      "hyprland/workspaces"
+  ],
     "modules-center": [
         "clock",
         "custom/song-title",
         "custom/spotify-prev",
         "custom/spotify-play",
-        "custom/spotify-next",
-        "hyprland/workspaces"
+        "custom/spotify-next"
     ],
-    "modules-right": [],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "battery"
+    ],
 
     "clock": {
         "format": "{:%H:%M}",
@@ -72,16 +79,16 @@
         }*/
     },
     "network": {
-        "format-wifi": "󰤨",
+        "format-wifi": "󰤨 {essid}",
         "format-ethernet": "󰈀",
         "format-disconnected": "󰤭",
         "tooltip": true,
-        "on-click": "./.config/rofi/wifi/wifi.sh"
+        "on-click": "nm-connection-editor"
     },
 
     "pulseaudio": {
         "format": "{icon}",
-        "format-muted": "󰝟",
+        "format-muted": "󰝟 {volume}%",
         "format-icons": {
             "default": [
                 "󰕿",
@@ -113,13 +120,13 @@
     },
 
     "cpu": {
-    "format": "󰍛",
+    "format": "󰍛  {usage}%",
     "tooltip": true,
     "tooltip-format": "CPU: {usage}%"
     },
 
     "memory": {
-        "format": "󰘚",
+        "format": "󰘚  {}%",
         "tooltip": true,
         "tooltip-format": "RAM: {}%"
     }

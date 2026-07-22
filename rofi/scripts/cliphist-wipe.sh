@@ -22,4 +22,4 @@ printf "󰆳 Yes\n󰆴 No" | rofi \
 
 cliphist wipe
 
-notify-send "Clipboard" "Historial eliminado"
+notify-send "Clipboard" "Deleted Clipboard"
