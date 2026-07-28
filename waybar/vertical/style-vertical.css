@@ -1,0 +1,132 @@
+@import "../colors.css";
+
+
+* {
+    border: none;
+    min-height: 0;
+    font-family: "Inter";
+    font-size: 14px;
+}
+
+window#waybar {
+    background: transparent;
+}
+
+.modules-center {
+    background: @bg0;
+
+    border-radius: 999px;
+
+    margin-top: 5px;
+
+    padding-left: 14px;
+    padding-right: 14px;
+}
+
+.modules-right {
+    background: @bg0;
+
+    border-radius: 999px;
+
+    margin-top: 5px;
+    margin-right: 4px;
+
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+.modules-left {
+    background: @bg0;
+
+    border-radius: 999px;
+
+    margin-top: 5px;
+    margin-left: 4px;
+
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#clock,
+#workspaces,
+#network,
+#pulseaudio,
+#cpu,
+#memory,
+#battery {
+    padding: 0 4px;
+    margin: 4px 0;
+}
+
+#clock {
+    font-weight: bold;
+    color: @text;
+}
+
+#workspaces button {
+    padding: 0 2px;
+    margin: 0 2px;
+
+    font-weight: bold;
+    color: @text;
+    border-radius: 999px;
+
+    background: @sec;
+    transition: all 200ms ease-in-out;
+}
+
+#workspaces button.active {
+    background: @bg1;
+    padding: 0 9px;
+    color: @bg0;
+}
+
+#workspaces button:hover {
+    background: @bg1;
+    color: @bg0;
+
+}
+
+#network{
+    padding: 0 8px;
+    margin: 0 2px;
+    color: @color3;
+    font-weight: bold;
+}
+#pulseaudio{
+    padding: 0 8px;
+    margin: 0 2px;
+    color: @color4;
+    font-weight: bold;
+}
+#cpu{
+    padding: 0 8px;
+    margin: 0 2px;
+    color: @color2;
+    font-weight: bold;
+}
+#memory{
+    padding: 0 8px;
+    margin: 0 2px;
+    color: @color1;
+    font-weight: bold;
+}
+
+#battery {
+    padding: 0 8px;
+    margin: 0 2px;
+
+    color: @color5;
+    font-weight: bold;
+
+}
+
+#custom-song-title,
+#custom-spotify-prev,
+#custom-spotify-play,
+#custom-spotify-next{
+    padding: 0 6px;
+    margin: 0 2px;
+    font-weight: bold;
+    color: @text; 
+}

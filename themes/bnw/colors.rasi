@@ -1,0 +1,6 @@
+*{
+    bg0: #000000;
+    bg1: #ffffff;
+    sec: #0d0d0d;
+    text: #ffffff;    
+}

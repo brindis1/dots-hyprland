@@ -1,0 +1,137 @@
+{
+    "layer": "top",
+    "position": "top",
+    "fixed-center": true,
+
+    "modules-left": [
+        "hyprland/workspaces"
+  ],
+    "modules-center": [
+        "clock",
+        "custom/song-title",
+        "custom/spotify-prev",
+        "custom/spotify-play",
+        "custom/spotify-next"
+    ],
+    "modules-right": [
+        "network",
+        "pulseaudio",
+        "cpu",
+        "memory",
+        "battery"
+    ],
+
+    "clock": {
+        "format": "{:%H:%M}",
+        "format-alt": "󰃱   {:%d %B %Y}",
+        "tooltip": true,
+        "tooltip-format": "<tt><small>{calendar}</small></tt>",
+        "calendar": {
+            "mode": "year",
+            "weeks-pos": "right",
+            "mode-mon-col": 3,
+            "format": {
+                "months":   "<span color='#acb0d0'><b>{}</b></span>",
+                "weeks":    "<span color='#7aa2f7'><b>W{}</b></span>",
+                "weekdays": "<span color='#e0af68'><b>{}</b></span>",
+                "days":     "<span color='#acb0d0'><b>{}</b></span>",
+                "today":    "<span color='#41a6b5'><b><u>{}</u></b></span>"
+            }
+        }
+    },
+    
+    "custom/song-title":{
+        "exec" :"~/.config/waybar/scripts/song-title.sh",
+        "exec-if": "playerctl -p spotify status >/dev/null 2>&1",
+        "interval": 1
+    },
+
+    "custom/spotify-prev": {
+        "exec-if": "~/.config/waybar/scripts/spotify-visible.sh",
+        "exec": "echo '󰒮'",
+        "interval": 1,
+        "tooltip": false,
+        "on-click": "playerctl -p spotify previous"
+    },
+
+    "custom/spotify-play": {
+        "exec-if": "~/.config/waybar/scripts/spotify-visible.sh",
+        "exec": "playerctl -p spotify status | grep -q Playing && echo '⏸' || echo '▶'",
+        "interval": 1,
+        "tooltip": false,
+        "on-click": "playerctl -p spotify play-pause"
+    },
+
+    "custom/spotify-next": {
+        "exec-if": "~/.config/waybar/scripts/spotify-visible.sh",
+        "exec": "echo '󰒭'",
+        "interval": 1,
+        "tooltip": false,
+        "on-click": "playerctl -p spotify next"
+    },
+
+    "hyprland/workspaces": {
+        "format": "{icon}",
+        "on-click": "activate"
+
+        /*"format-icons": {
+            "active": "󰮯",
+            "default": "󰊠",
+            "persistent": "󰊠"
+        }*/
+    },
+    "network": {
+        "format-wifi": "󰤨 {essid}",
+        "format-ethernet": "󰈀  Connected",
+        "format-disconnected": "󰤭  Disconnected",
+        "tooltip": true,
+        "tooltip-format-wifi": "WiFi: {essid}\nSeñal: {signalStrength}%",
+        "tooltip-format-ethernet": "Ethernet: Conectado",
+        "on-click": "nm-connection-editor"
+    },
+
+    "pulseaudio": {
+        "format": "{icon}  {volume}%",
+        "format-muted": "󰝟  {volume}%",
+        "format-icons": {
+            "default": [
+                "󰕿",
+                "󰖀",
+                "󰕾"
+            ]
+        },
+        "tooltip": true,
+        "tooltip-format": "Volumen: {volume}%",
+        "on-click": "pavucontrol"
+    },
+    "battery": {
+        "format": "{icon} {capacity}%",
+        "format-charging": "{icon} {capacity}%",
+        "format-icons": [
+            "󰁺",
+            "󰁻",
+            "󰁼",
+            "󰁽",
+            "󰁾",
+            "󰁿",
+            "󰂀",
+            "󰂁",
+            "󰂂",
+            "󰁹"
+        ],
+        "tooltip": true,
+        "tooltip-format": "Batería: {capacity}%"
+    },
+
+    "cpu": {
+    "format": "󰍛  {usage}%",
+    "tooltip": true,
+    "tooltip-format": "CPU: {usage}%"
+    },
+
+    "memory": {
+        "format": "󰘚  {}%",
+        "tooltip": true,
+        "tooltip-format": "RAM: {}%"
+    }
+}
