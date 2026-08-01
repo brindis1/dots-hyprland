@@ -130,7 +130,7 @@ hl.config({
 		blur = {
 			enabled = true,
 			size = 7,
-			passes = 2,
+			passes = 4,
 			vibrancy = 0.1696,
 		},
 	},
@@ -320,6 +320,11 @@ hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
+-- hyprland.lua
+hl.bind("SUPER + z", function()
+    hl.plugin.scrolloverview.overview("toggle all")
+end)
+
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind(
 	"XF86AudioRaiseVolume",
@@ -349,6 +354,18 @@ hl.bind("XF86AudioNext", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPrev", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+
+
+-- Minimize windows using special workspaces
+hl.bind("SUPER + X", function ()
+    if hl.get_workspace("special:minimized") then
+        hl.dispatch(hl.dsp.window.move({ workspace = hl.get_active_workspace(), window = "tag:minimized" }))
+        hl.dispatch(hl.dsp.window.clear_tags({ window = "tag:minimized" }))
+    else
+        hl.dispatch(hl.dsp.window.tag({ tag = "minimized", window = hl.get_active_window() }))
+        hl.dispatch(hl.dsp.window.move({ workspace = "special:minimized", follow = false }))
+    end
+end)
 
 --------------------------------
 ---- WINDOWS AND WORKSPACES ----
@@ -509,3 +526,24 @@ hl.bind(mainMod .. " + SHIFT + T", function()
 		icon = 5,
 	})
 end)
+
+-- .config/hypr/hyprland.lua
+hl.config({
+    plugin = {
+        scrolloverview = {
+            gesture_distance = 300, -- how far is the "max" for the gesture
+            scale = 0.5, -- preferred overview scale
+            workspace_gap = 100,
+            layout = "vertical", -- vertical or horizontal
+            wallpaper = 0, -- 0: global only, 1: per-workspace only, 2: both
+            blur = false, -- blur only the main overview wallpaper
+
+            shadow = {
+                enabled = false,
+                range = 50,
+                render_power = 3,
+                color = 0xee1a1a1a,
+            },
+        },
+    },
+})
