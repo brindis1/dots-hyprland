@@ -12,6 +12,18 @@ return {
             })
 
             vim.cmd.colorscheme("catppuccin")
+
+			-- Espera a que el tema termine de cargar
+            vim.schedule(function()
+                vim.api.nvim_set_hl(0, "LineNr", {
+                    fg = "#8087a2",
+                })
+
+                vim.api.nvim_set_hl(0, "CursorLineNr", {
+                    fg = "#8aadf4",
+                    bold = true,
+                })
+			end)
         end,
     },
 

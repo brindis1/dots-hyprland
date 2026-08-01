@@ -1,4 +1,3 @@
-vim.opt.number = true
-
+require("config.options")
 require("config.lazy")
 require("config.keymaps")

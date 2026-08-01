@@ -13,3 +13,9 @@ vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help ta
 vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", {
   desc = "Toggle Explorer",
 })
+
+vim.keymap.set({ "n", "v" }, "y", '"+y')
+vim.keymap.set("n", "Y", '"+Y')
+
+vim.keymap.set("v", "<Tab>", ">gv", { desc = "Indent selection" })
+vim.keymap.set("v", "<S-Tab>", "<gv", { desc = "Unindent selection" })
