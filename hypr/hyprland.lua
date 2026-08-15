@@ -39,7 +39,8 @@ local menu = "rofi -show drun"
 local bar = "pkill waybar || ~/.config/waybar/scripts/start.sh &"
 local browser = "helium-browser"
 local wallpaper = os.getenv("HOME") .. "/.config/rofi/scripts/wallpaper.sh"
-local screenshot = os.getenv("HOME") .. "/.config/scripts/screenshots.sh"
+-- local screenshot = os.getenv("HOME") .. "/.config/scripts/screenshots.sh"
+local screenshot = [[grim -g "$(slurp)" - | swappy -f -]]
 local wlogout = "wlogout"
 ------------------ -
 ---- AUTOSTART ----
@@ -99,7 +100,7 @@ hl.config({
 		border_size = 1,
 
 		col = {
-			active_border = { colors = { "rgba(cfdbd5ff)", "rgba(e8eddfaa)" }, angle = 45 },
+			active_border = { colors = { "rgba(B2B2B2FF)", "rgba(B2B2B2FF)" }, angle = 45 },
 			inactive_border = "rgba(595959aa)",
 		},
 
@@ -113,8 +114,8 @@ hl.config({
 	},
 
 	decoration = {
-		rounding = 10,
-		rounding_power = 2,
+		rounding = 12,
+		rounding_power = 6,
 
 		-- Change transparency of focused and unfocused windows
 		active_opacity = 0.975,
@@ -320,10 +321,10 @@ hl.bind(mainMod .. " + mouse_up", hl.dsp.focus({ workspace = "e-1" }))
 hl.bind(mainMod .. " + mouse:272", hl.dsp.window.drag(), { mouse = true })
 hl.bind(mainMod .. " + mouse:273", hl.dsp.window.resize(), { mouse = true })
 
--- hyprland.lua
-hl.bind("SUPER + z", function()
-    hl.plugin.scrolloverview.overview("toggle all")
-end)
+-- -- hyprland.lua
+-- hl.bind("SUPER + z", function()
+--     hl.plugin.scrolloverview.overview("toggle all")
+-- end)
 
 -- Laptop multimedia keys for volume and LCD brightness
 hl.bind(
@@ -475,7 +476,7 @@ local function update_border_colors(layout)
 				border_size = 1,
 				col = {
 					active_border = {
-						colors = { "rgba(cfdbd5ff)", "rgba(e8eddfaa)" },
+						colors = { "rgba(B2B2B2ff)", "rgba(B2B2B2FF)" },
 						angle = 45,
 					},
 					inactive_border = "rgba(595959aa)",
@@ -488,7 +489,7 @@ local function update_border_colors(layout)
 				border_size = 1,
 				col = {
 					active_border = {
-						colors = { "rgba(cfdbd5ff)", "rgba(e8eddfaa)" },
+						colors = { "rgba(B2B2B2FF)", "rgba(B2B2B2FF)" },
 						angle = 45,
 					},
 					inactive_border = "rgba(595959aa)",
@@ -526,24 +527,24 @@ hl.bind(mainMod .. " + SHIFT + T", function()
 		icon = 5,
 	})
 end)
-
--- .config/hypr/hyprland.lua
-hl.config({
-    plugin = {
-        scrolloverview = {
-            gesture_distance = 300, -- how far is the "max" for the gesture
-            scale = 0.5, -- preferred overview scale
-            workspace_gap = 100,
-            layout = "vertical", -- vertical or horizontal
-            wallpaper = 0, -- 0: global only, 1: per-workspace only, 2: both
-            blur = false, -- blur only the main overview wallpaper
-
-            shadow = {
-                enabled = false,
-                range = 50,
-                render_power = 3,
-                color = 0xee1a1a1a,
-            },
-        },
-    },
-})
+--
+-- -- .config/hypr/hyprland.lua
+-- hl.config({
+--     plugin = {
+--         scrolloverview = {
+--             gesture_distance = 300, -- how far is the "max" for the gesture
+--             scale = 0.5, -- preferred overview scale
+--             workspace_gap = 100,
+--             layout = "vertical", -- vertical or horizontal
+--             wallpaper = 0, -- 0: global only, 1: per-workspace only, 2: both
+--             blur = false, -- blur only the main overview wallpaper
+--
+--             shadow = {
+--                 enabled = false,
+--                 range = 50,
+--                 render_power = 3,
+--                 color = 0xee1a1a1a,
+--             },
+--         },
+--     },
+-- })

@@ -10,10 +10,11 @@ vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live gr
 vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
 
-vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", {
-  desc = "Toggle Explorer",
+vim.keymap.set("n", "<leader>e", function()
+    Snacks.explorer()
+end, {
+    desc = "Toggle Explorer",
 })
-
 vim.keymap.set({ "n", "v" }, "y", '"+y')
 vim.keymap.set("n", "Y", '"+Y')
 
