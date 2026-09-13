@@ -1,0 +1,37 @@
+sw_volume: 37
+audio_device_state:1:PipeWire Sound Server
+audio_device_state:1:Visualizer FIFO
+state: play
+current: 5
+time: 120.24000000000001
+random: 0
+repeat: 0
+single: 0
+consume: 0
+crossfade: 0
+mixrampdb: 0
+mixrampdelay: -1
+lastloadedplaylist: 
+playlist_begin
+0:Beauty Sleep/01 Play Em Like Atari [intro].mp3
+1:Beauty Sleep/02 s_o to my stalkers.mp3
+2:Beauty Sleep/03 perfectCondition((GENUINE)).mp3
+3:Beauty Sleep/04 I'm Alright.mp3
+4:Beauty Sleep/05 Forever United _ ICE-POP.mp3
+5:Beauty Sleep/06 [zzzZ] XxPosed.mp3
+6:Beauty Sleep/07 I'm Gone.mp3
+7:Beauty Sleep/08 perfectlyStill [gemStone1].mp3
+8:Beauty Sleep/09 guardianAngels [HARMONY1].mp3
+9:Beauty Sleep/10 guardianAngels((NATU)).mp3
+10:Beauty Sleep/11 Black Boy.mp3
+11:Beauty Sleep/12 AAA Powerline.mp3
+12:Beauty Sleep/13 beautySleep.mp3
+13:Beauty Sleep/14 Mirage.mp3
+14:Beauty Sleep/15 HOLDMEDOWNLIKEGRAVITY.mp3
+15:Beauty Sleep/16 Stalker.mp3
+16:Beauty Sleep/17 - Ecco2k - 1st Crush [Antifreeze].mp3
+17:Beauty Sleep/18 - Ecco2k - 3rd Crush [Crush Resist].mp3
+18:Beauty Sleep/19 - Ecco2k - 7th Crush [First Kiss].mp3
+19:Beauty Sleep/20 vHappily Ever After.mp3
+20:Beauty Sleep/21 syndaflod [outro ].mp3
+playlist_end

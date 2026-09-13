@@ -1,0 +1,214 @@
+2026-06-25T11:53:14 exception: Failed to open "/home/brindis/.config/mpd/state": No such file or directory
+2026-06-25T11:55:18 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T12:01:42 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:06:58 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:07:02 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:07:53 exception: All outputs are disabled
+2026-06-25T15:07:54 exception: All outputs are disabled
+2026-06-25T15:07:54 exception: All outputs are disabled
+2026-06-25T15:07:54 exception: All outputs are disabled
+2026-06-25T15:07:54 exception: All outputs are disabled
+2026-06-25T15:07:54 exception: All outputs are disabled
+2026-06-25T15:07:54 exception: All outputs are disabled
+2026-06-25T15:11:11 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:11:13 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:14:38 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:15:56 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:19:00 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:19:02 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:24:00 update: added Beauty Sleep/02 s_o to my stalkers.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/16 Stalker.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/17 - Ecco2k - 1st Crush [Antifreeze].mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/14 Mirage.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/20 vHappily Ever After.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/06 [zzzZ] XxPosed.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/19 - Ecco2k - 7th Crush [First Kiss].mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/08 perfectlyStill [gemStone1].mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/21 syndaflod [outro ].mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/03 perfectCondition((GENUINE)).mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/10 guardianAngels((NATU)).mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/09 guardianAngels [HARMONY1].mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/04 I'm Alright.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/12 AAA Powerline.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/13 beautySleep.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/11 Black Boy.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/07 I'm Gone.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/18 - Ecco2k - 3rd Crush [Crush Resist].mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/15 HOLDMEDOWNLIKEGRAVITY.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/05 Forever United _ ICE-POP.mp3
+2026-06-25T15:24:00 update: added Beauty Sleep/01 Play Em Like Atari [intro].mp3
+2026-06-25T15:26:56 exception: No such directory
+2026-06-25T15:27:00 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:27:47 player: played "Beauty Sleep/01 Play Em Like Atari [intro].mp3"
+2026-06-25T15:27:52 player: played "Beauty Sleep/16 Stalker.mp3"
+2026-06-25T15:30:21 player: played "Beauty Sleep/20 vHappily Ever After.mp3"
+2026-06-25T15:32:37 player: played "Beauty Sleep/05 Forever United _ ICE-POP.mp3"
+2026-06-25T15:33:18 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-06-25T15:34:48 player: played "Beauty Sleep/05 Forever United _ ICE-POP.mp3"
+2026-06-25T15:36:21 player: played "Beauty Sleep/03 perfectCondition((GENUINE)).mp3"
+2026-06-25T15:38:49 player: played "Beauty Sleep/10 guardianAngels((NATU)).mp3"
+2026-06-25T15:42:20 player: played "Beauty Sleep/16 Stalker.mp3"
+2026-06-25T15:43:58 player: played "Beauty Sleep/13 beautySleep.mp3"
+2026-06-25T15:46:40 player: played "Beauty Sleep/06 [zzzZ] XxPosed.mp3"
+2026-06-25T15:47:36 player: played "Beauty Sleep/01 Play Em Like Atari [intro].mp3"
+2026-06-25T15:49:35 player: played "Beauty Sleep/17 - Ecco2k - 1st Crush [Antifreeze].mp3"
+2026-06-25T15:53:47 player: played "Beauty Sleep/12 AAA Powerline.mp3"
+2026-06-25T15:56:16 player: played "Beauty Sleep/20 vHappily Ever After.mp3"
+2026-06-25T15:57:13 player: played "Beauty Sleep/04 I'm Alright.mp3"
+2026-06-25T15:59:04 player: played "Beauty Sleep/07 I'm Gone.mp3"
+2026-06-25T16:00:38 player: played "Beauty Sleep/18 - Ecco2k - 3rd Crush [Crush Resist].mp3"
+2026-06-25T16:04:15 player: played "Beauty Sleep/19 - Ecco2k - 7th Crush [First Kiss].mp3"
+2026-06-25T16:05:47 player: played "Beauty Sleep/08 perfectlyStill [gemStone1].mp3"
+2026-07-29T20:18:54 player: played "Beauty Sleep/11 Black Boy.mp3"
+2026-07-29T20:21:38 player: played "Beauty Sleep/15 HOLDMEDOWNLIKEGRAVITY.mp3"
+2026-07-29T20:23:28 player: played "Beauty Sleep/05 Forever United _ ICE-POP.mp3"
+2026-07-29T20:25:01 player: played "Beauty Sleep/18 - Ecco2k - 3rd Crush [Crush Resist].mp3"
+2026-07-29T20:29:14 player: played "Beauty Sleep/12 AAA Powerline.mp3"
+2026-07-29T20:32:45 player: played "Beauty Sleep/16 Stalker.mp3"
+2026-07-29T20:34:12 player: played "Beauty Sleep/14 Mirage.mp3"
+2026-07-29T20:35:46 player: played "Beauty Sleep/18 - Ecco2k - 3rd Crush [Crush Resist].mp3"
+2026-07-29T20:36:42 player: played "Beauty Sleep/01 Play Em Like Atari [intro].mp3"
+2026-07-29T20:38:33 player: played "Beauty Sleep/05 Forever United _ ICE-POP.mp3"
+2026-07-29T20:41:02 player: played "Beauty Sleep/20 vHappily Ever After.mp3"
+2026-07-29T20:42:40 player: played "Beauty Sleep/13 beautySleep.mp3"
+2026-07-29T20:46:11 player: played "Beauty Sleep/16 Stalker.mp3"
+2026-07-29T20:50:24 player: played "Beauty Sleep/12 AAA Powerline.mp3"
+2026-07-29T20:57:30 player: played "Beauty Sleep/21 syndaflod [outro ].mp3"
+2026-07-29T20:59:40 player: played "Beauty Sleep/02 s_o to my stalkers.mp3"
+2026-07-29T21:01:18 player: played "Beauty Sleep/13 beautySleep.mp3"
+2026-07-29T21:03:08 player: played "Beauty Sleep/05 Forever United _ ICE-POP.mp3"
+2026-07-29T21:04:27 player: played "Beauty Sleep/09 guardianAngels [HARMONY1].mp3"
+2026-07-29T21:08:04 player: played "Beauty Sleep/19 - Ecco2k - 7th Crush [First Kiss].mp3"
+2026-07-29T21:09:32 player: played "Beauty Sleep/08 perfectlyStill [gemStone1].mp3"
+2026-07-29T21:11:21 player: played "Beauty Sleep/10 guardianAngels((NATU)).mp3"
+2026-07-29T21:14:58 player: played "Beauty Sleep/19 - Ecco2k - 7th Crush [First Kiss].mp3"
+2026-07-29T21:16:31 player: played "Beauty Sleep/03 perfectCondition((GENUINE)).mp3"
+2026-07-29T21:17:59 player: played "Beauty Sleep/08 perfectlyStill [gemStone1].mp3"
+2026-07-29T21:18:56 player: played "Beauty Sleep/04 I'm Alright.mp3"
+2026-07-29T21:20:24 player: played "Beauty Sleep/14 Mirage.mp3"
+2026-07-29T21:22:23 player: played "Beauty Sleep/17 - Ecco2k - 1st Crush [Antifreeze].mp3"
+2026-07-29T21:24:42 player: played "Beauty Sleep/11 Black Boy.mp3"
+2026-07-29T21:26:15 player: played "Beauty Sleep/03 perfectCondition((GENUINE)).mp3"
+2026-07-29T21:28:57 player: played "Beauty Sleep/06 [zzzZ] XxPosed.mp3"
+2026-07-29T21:30:30 player: played "Beauty Sleep/18 - Ecco2k - 3rd Crush [Crush Resist].mp3"
+2026-07-29T21:32:20 player: played "Beauty Sleep/10 guardianAngels((NATU)).mp3"
+2026-07-29T21:39:26 player: played "Beauty Sleep/21 syndaflod [outro ].mp3"
+2026-07-29T21:43:38 player: played "Beauty Sleep/12 AAA Powerline.mp3"
+2026-07-29T21:46:07 player: played "Beauty Sleep/20 vHappily Ever After.mp3"
+2026-07-29T21:47:05 player: played "Beauty Sleep/04 I'm Alright.mp3"
+2026-07-29T21:48:02 player: played "Beauty Sleep/04 I'm Alright.mp3"
+2026-07-29T21:49:53 player: played "Beauty Sleep/07 I'm Gone.mp3"
+2026-07-29T21:51:43 player: played "Beauty Sleep/10 guardianAngels((NATU)).mp3"
+2026-07-29T21:53:02 player: played "Beauty Sleep/09 guardianAngels [HARMONY1].mp3"
+2026-07-29T21:55:31 player: played "Beauty Sleep/20 vHappily Ever After.mp3"
+2026-07-29T21:57:04 player: played "Beauty Sleep/03 perfectCondition((GENUINE)).mp3"
+2026-07-29T21:58:31 player: played "Beauty Sleep/14 Mirage.mp3"
+2026-07-29T22:00:41 player: played "Beauty Sleep/02 s_o to my stalkers.mp3"
+2026-07-29T22:02:09 player: played "Beauty Sleep/08 perfectlyStill [gemStone1].mp3"
+2026-07-29T22:04:18 player: played "Beauty Sleep/02 s_o to my stalkers.mp3"
+2026-07-29T22:06:08 player: played "Beauty Sleep/10 guardianAngels((NATU)).mp3"
+2026-07-29T22:09:39 player: played "Beauty Sleep/16 Stalker.mp3"
+2026-07-29T22:12:08 player: played "Beauty Sleep/20 vHappily Ever After.mp3"
+2026-07-29T22:14:50 player: played "Beauty Sleep/06 [zzzZ] XxPosed.mp3"
+2026-07-29T22:16:41 player: played "Beauty Sleep/07 I'm Gone.mp3"
+2026-07-29T22:18:08 player: played "Beauty Sleep/14 Mirage.mp3"
+2026-07-30T07:02:19 player: played "Beauty Sleep/21 syndaflod [outro ].mp3"
+2026-07-30T07:05:04 player: played "Beauty Sleep/15 HOLDMEDOWNLIKEGRAVITY.mp3"
+2026-07-30T07:07:48 player: played "Beauty Sleep/15 HOLDMEDOWNLIKEGRAVITY.mp3"
+2026-07-30T07:09:15 player: played "Beauty Sleep/08 perfectlyStill [gemStone1].mp3"
+2026-07-30T07:10:12 player: played "Beauty Sleep/01 Play Em Like Atari [intro].mp3"
+2026-07-30T07:11:09 player: played "Beauty Sleep/04 I'm Alright.mp3"
+2026-07-30T07:13:08 player: played "Beauty Sleep/17 - Ecco2k - 1st Crush [Antifreeze].mp3"
+2026-07-30T07:15:00 player: played "Beauty Sleep/07 I'm Gone.mp3"
+2026-07-30T07:18:37 player: played "Beauty Sleep/19 - Ecco2k - 7th Crush [First Kiss].mp3"
+2026-07-30T07:19:33 player: played "Beauty Sleep/01 Play Em Like Atari [intro].mp3"
+2026-07-30T07:22:14 player: played "Beauty Sleep/06 [zzzZ] XxPosed.mp3"
+2026-07-30T07:24:14 player: played "Beauty Sleep/17 - Ecco2k - 1st Crush [Antifreeze].mp3"
+2026-07-30T07:25:33 player: played "Beauty Sleep/09 guardianAngels [HARMONY1].mp3"
+2026-07-30T07:29:04 player: played "Beauty Sleep/16 Stalker.mp3"
+2026-07-30T07:33:16 player: played "Beauty Sleep/12 AAA Powerline.mp3"
+2026-07-30T07:35:16 player: played "Beauty Sleep/17 - Ecco2k - 1st Crush [Antifreeze].mp3"
+2026-07-30T07:38:53 player: played "Beauty Sleep/19 - Ecco2k - 7th Crush [First Kiss].mp3"
+2026-07-30T07:41:02 player: played "Beauty Sleep/02 s_o to my stalkers.mp3"
+2026-07-30T07:42:41 player: played "Beauty Sleep/13 beautySleep.mp3"
+2026-07-30T07:45:00 player: played "Beauty Sleep/11 Black Boy.mp3"
+2026-07-30T07:47:19 player: played "Beauty Sleep/11 Black Boy.mp3"
+2026-07-30T07:48:57 player: played "Beauty Sleep/13 beautySleep.mp3"
+2026-07-30T07:50:31 player: played "Beauty Sleep/18 - Ecco2k - 3rd Crush [Crush Resist].mp3"
+2026-07-30T07:52:04 player: played "Beauty Sleep/03 perfectCondition((GENUINE)).mp3"
+2026-07-30T07:54:45 player: played "Beauty Sleep/06 [zzzZ] XxPosed.mp3"
+2026-07-30T07:56:35 player: played "Beauty Sleep/05 Forever United _ ICE-POP.mp3"
+2026-07-30T08:03:42 player: played "Beauty Sleep/21 syndaflod [outro ].mp3"
+2026-07-30T08:04:38 player: played "Beauty Sleep/01 Play Em Like Atari [intro].mp3"
+2026-07-30T08:05:57 player: played "Beauty Sleep/09 guardianAngels [HARMONY1].mp3"
+2026-07-30T08:08:41 player: played "Beauty Sleep/15 HOLDMEDOWNLIKEGRAVITY.mp3"
+2026-07-30T08:10:33 player: played "Beauty Sleep/07 I'm Gone.mp3"
+2026-09-13T10:14:27 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-09-13T10:14:30 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-09-13T10:16:20 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-09-13T10:16:22 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-09-13T10:19:29 config: No global port, disabling zeroconf
+2026-09-13T10:19:51 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-09-13T10:20:29 update: added /1709449355_INACTIVE_bladee_everything_can_go_⧸_snow_soldiers_remaster.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/07. Never Let Me Go.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/12. Damn You.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/17. Tonight (I Don_t Wanna Go).mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/15. Backfire.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/06. The Man I Love.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/01. Driving in Cars with Boys.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/21. Axl Rose Husband.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/03. Serial Killer.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/11. Angels Forever.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/09. Kinda Outta Luck.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/04. Hollywood.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/10. Queen of Disaster.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/14. Are You Ready (Ooh Baby).mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/20. Blizzard.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/08. Children of the Bad Revolution.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/18. Money Hunny.mp3
+2026-09-13T10:20:29 update: added Lana Del Rey - Unreleased (2015)/05. You Can Be the Boss.mp3
+2026-09-13T10:20:30 update: added Lana Del Rey - Unreleased (2015)/16. Last Girl on Earth.mp3
+2026-09-13T10:20:30 update: added Lana Del Rey - Unreleased (2015)/19. Get Drunk.mp3
+2026-09-13T10:20:30 update: added Lana Del Rey - Unreleased (2015)/02. Prom Song (Gone Wrong).mp3
+2026-09-13T10:20:30 update: added Lana Del Rey - Unreleased (2015)/13. Because of you.mp3
+2026-09-13T10:32:19 update: added /0. bladee - everything can go.mp3
+2026-09-13T10:32:19 update: removing 1709449355_INACTIVE_bladee_everything_can_go_⧸_snow_soldiers_remaster.mp3
+2026-09-13T10:32:20 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-09-13T10:32:20 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-09-13T10:32:28 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-09-13T10:33:23 player: played "0. bladee - everything can go.mp3"
+2026-09-13T10:33:25 player: played "Beauty Sleep/01 Play Em Like Atari [intro].mp3"
+2026-09-13T10:34:21 player: played "Beauty Sleep/01 Play Em Like Atari [intro].mp3"
+2026-09-13T10:34:41 config: No global port, disabling zeroconf
+2026-09-13T10:35:52 player: played "Beauty Sleep/01 Play Em Like Atari [intro].mp3"
+2026-09-13T10:36:32 player: played "Beauty Sleep/02 s_o to my stalkers.mp3"
+2026-09-13T10:38:01 player: played "Beauty Sleep/02 s_o to my stalkers.mp3"
+2026-09-13T10:38:05 player: played "Beauty Sleep/03 perfectCondition((GENUINE)).mp3"
+2026-09-13T10:39:02 player: played "Beauty Sleep/04 I'm Alright.mp3"
+2026-09-13T10:39:47 player: played "Beauty Sleep/01 Play Em Like Atari [intro].mp3"
+2026-09-13T10:40:24 player: played "Beauty Sleep/02 s_o to my stalkers.mp3"
+2026-09-13T10:40:47 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-09-13T10:40:50 player: played "Beauty Sleep/05 Forever United _ ICE-POP.mp3"
+2026-09-13T10:40:52 player: played "Beauty Sleep/05 Forever United _ ICE-POP.mp3"
+2026-09-13T10:43:34 player: played "Beauty Sleep/06 [zzzZ] XxPosed.mp3"
+2026-09-13T10:45:25 player: played "Beauty Sleep/07 I'm Gone.mp3"
+2026-09-13T10:45:32 player: played "0. bladee - everything can go.mp3"
+2026-09-13T10:46:12 player: played "0. bladee - everything can go.mp3"
+2026-09-13T10:46:52 player: played "Beauty Sleep/08 perfectlyStill [gemStone1].mp3"
+2026-09-13T10:48:12 player: played "Beauty Sleep/09 guardianAngels [HARMONY1].mp3"
+2026-09-13T10:48:40 player: played "Beauty Sleep/20 vHappily Ever After.mp3"
+2026-09-13T10:50:01 player: played "Beauty Sleep/10 guardianAngels((NATU)).mp3"
+2026-09-13T10:51:39 player: played "Beauty Sleep/13 beautySleep.mp3"
+2026-09-13T10:53:07 player: played "Beauty Sleep/14 Mirage.mp3"
+2026-09-13T10:55:44 player: played "Beauty Sleep/10 guardianAngels((NATU)).mp3"
+2026-09-13T10:55:51 player: played "Beauty Sleep/15 HOLDMEDOWNLIKEGRAVITY.mp3"
+2026-09-13T10:57:05 player: played "Beauty Sleep/11 Black Boy.mp3"
+2026-09-13T10:58:11 player: played "Beauty Sleep/11 Black Boy.mp3"
+2026-09-13T11:02:23 player: played "Beauty Sleep/12 AAA Powerline.mp3"
+2026-09-13T11:03:56 exception: Failed to open /home/brindis/.config/mpd/playlists: No such file or directory
+2026-09-13T11:04:01 player: played "Beauty Sleep/13 beautySleep.mp3"
+2026-09-13T11:04:11 player: played "Beauty Sleep/14 Mirage.mp3"
+2026-09-13T11:08:54 player: played "0. bladee - everything can go.mp3"
+2026-09-13T11:12:18 player: played "Lana Del Rey - Unreleased (2015)/20. Blizzard.mp3"
+2026-09-13T11:13:05 player: played "Lana Del Rey - Unreleased (2015)/21. Axl Rose Husband.mp3"
+2026-09-13T11:14:54 player: played "Beauty Sleep/05 Forever United _ ICE-POP.mp3"
